@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background: url(../img/Kuriara.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper .center{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+}
+
+.center{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.wrapper .center .content
+{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 10px 0 0 0;
+}
+
+.center h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.navMenu {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(190, 190, 190, 0.5);
+    z-index: 1;
+}
+
+.navMenu ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navMenu ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navMenu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 12px 26px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: .8s ease-in;
+    -moz-transition: .8s ease-in;
+    -o-transition: .8s ease-in;
+    transition: .8s ease-in;
+}
+
+.navMenu ul li a.active,
+.navMenu ul li a:hover{
+    background:black;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+.Logo{
+    width: 150px;
+    height: auto;
+    padding: 10px 30px;
+    margin: 15px 15px;
+    border: black solid 5px;
+    border-radius: 25px;
+}
+
+.artist-name{
+    position:absolute;
+    list-style: none;
+    margin-top: -55px;
+    margin-left: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein{
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
